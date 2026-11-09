@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Maroua ♥</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff5f6;--card:#ffffff;--text:#4a2a35;--muted:#8a6470;--accent:#d6336c;--accent2:#f783ac;--shadow:rgba(214,51,108,.15);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1015;--card:#2a181f;--text:#fbe6ec;--muted:#c9a3b0;--accent:#ff6b9a;--accent2:#ff8fb3;--shadow:rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#1d1015;--card:#2a181f;--text:#fbe6ec;--muted:#c9a3b0;--accent:#ff6b9a;--accent2:#ff8fb3;--shadow:rgba(0,0,0,.4)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.7;overflow-x:hidden}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.hearts span{position:absolute;bottom:-40px;color:var(--accent2);opacity:.5;animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+section{position:relative;z-index:1;max-width:720px;margin:0 auto;padding:72px 24px}
+.hero{min-height:90vh;min-height:90svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+.hero small{letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3rem,13vw,6rem);margin:.2em 0;color:var(--accent);line-height:1.1}
+.hero p{font-size:1.15rem;color:var(--muted);max-width:30ch}
+.btn{margin-top:28px;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:14px 30px;font-size:1rem;cursor:pointer;box-shadow:0 8px 24px var(--shadow);font-family:inherit}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:2rem;text-align:center;margin:0 0 32px;color:var(--accent)}
+.grid{display:grid;gap:16px}
+.card{background:var(--card);border-radius:20px;padding:24px;box-shadow:0 10px 30px var(--shadow)}
+.card b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:1.25rem;color:var(--accent);margin-bottom:6px}
+.card p{margin:0;color:var(--muted)}
+.letter{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:1.2rem}
+.letter p{margin:0 0 1em}
+.sign{text-align:right;color:var(--accent);font-style:normal}
+.counter{text-align:center}
+.counter .num{font-family:'Playfair Display',Georgia,serif;font-size:3.5rem;color:var(--accent)}
+.reasons{min-height:90px;text-align:center;font-size:1.2rem;font-family:'Playfair Display',Georgia,serif;font-style:italic}
+footer{position:relative;z-index:1;text-align:center;padding:40px 24px;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+body{-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+input[type=date]{max-width:100%;min-height:48px}
+@media (max-width:600px){section{padding:48px 18px}h2{font-size:1.6rem;margin-bottom:24px}.card{padding:20px}.btn{width:100%;max-width:320px;padding:16px 24px}.counter .num{font-size:3rem}.letter{font-size:1.08rem}.hero p{font-size:1.05rem}}
+@media (prefers-reduced-motion:reduce){.hearts span{animation:none}.reveal{transition:none}}
+.ask{text-align:center}.ask h2{font-size:2.2rem}.q-btns{display:flex;gap:16px;justify-content:center;align-items:center;min-height:64px;flex-wrap:wrap;margin-top:24px}.q-btns .btn{margin-top:0;width:auto;min-width:120px}.btn.no{background:var(--card);color:var(--accent);border:2px solid var(--accent);box-shadow:none;transition:left .25s ease,top .25s ease;z-index:50;touch-action:none}.yay{font-family:'Playfair Display',Georgia,serif;font-size:3.5rem;color:var(--accent)}.hint{color:var(--muted);min-height:1.7em;margin-top:12px}.hearts span.burst{opacity:.9}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+  <small>This one is for you</small>
+  <h1>Maroua</h1>
+  <p>The person who makes my days better, just by being you.</p>
+  <button class="btn" onclick="document.getElementById('why').scrollIntoView()">Open ♥</button>
+</section>
+
+<section id="why" class="reveal">
+  <h2>Why I love you</h2>
+  <div class="grid">
+    <div class="card"><b>Your heart</b><p>You care so deeply and so honestly. It's one of the first things I loved about you.</p></div>
+    <div class="card"><b>Your smile</b><p>It can fix a bad day in a second. I'd do anything to keep seeing it.</p></div>
+    <div class="card"><b>How you make me feel</b><p>Calm, happy and understood. With you, I can just be myself.</p></div>
+    <div class="card"><b>Your strength</b><p>I see how hard you try and how far you go. I'm so proud of you.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>My promise to you</h2>
+  <div class="grid">
+    <div class="card"><b>I'll support you</b><p>In your dreams, your goals and your hard days. Whatever you chase, I'm behind you.</p></div>
+    <div class="card"><b>I'll listen</b><p>When you're happy, stressed or just need to talk, I'm here.</p></div>
+    <div class="card"><b>I'll be there</b><p>In the good times and the tough ones. You never have to go through anything alone.</p></div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>A little reminder</h2>
+  <div class="reasons" id="reason">Tap the button for a reason ♥</div>
+  <div style="text-align:center"><button class="btn" onclick="nextReason()">Another reason</button></div>
+</section>
+
+<section class="reveal counter">
+  <h2>Together since</h2>
+  <p style="color:var(--muted)">Pick the day we started, and watch the days add up.</p>
+  <input type="date" id="date" style="padding:10px 16px;border-radius:12px;border:1px solid var(--accent2);background:var(--card);color:var(--text);font-family:inherit;font-size:1rem">
+  <div class="num" id="days">—</div>
+  <div style="color:var(--muted)" id="label"></div>
+</section>
+
+<section class="reveal">
+  <h2>A letter for you</h2>
+  <div class="card letter">
+    <p>My love,</p>
+    <p>I wanted to make something that shows how much you mean to me, because sometimes words in a message aren't enough.</p>
+    <p>Thank you for being you, for your patience, your kindness and your love. I'm grateful for you every single day, and I'll always be in your corner.</p>
+    <p>You are my favorite person.</p>
+    <p class="sign">Forever yours ♥</p>
+  </div>
+</section>
+
+<section class="reveal ask"><div id="q"><h2>One last question...</h2><p class="letter" style="font-size:1.4rem">Will you be my girlfriend forever?</p><div class="q-btns"><button class="btn" id="yes">Yes ♥</button><button class="btn no" id="no">No</button></div><div class="hint" id="hint"></div></div></section>
+
+<footer>Made with love, just for Maroua ♥</footer>
+
+<script>
+var reasons=["Because you make ordinary days feel special.","Because you believe in the people you love.","Because your laugh is my favorite sound.","Because you're beautiful inside and out.","Because with you, I feel at home.","Because you keep going, even when it's hard.","Because you're simply you, and that's perfect."];
+var ri=-1;
+function nextReason(){ri=(ri+1)%reasons.length;document.getElementById('reason').textContent=reasons[ri];}
+var h=document.getElementById('hearts');
+for(var i=0;i<(window.innerWidth<600?10:18);i++){var s=document.createElement('span');s.textContent='♥';s.style.left=Math.random()*100+'%';s.style.fontSize=(12+Math.random()*22)+'px';s.style.animationDuration=(9+Math.random()*10)+'s';s.style.animationDelay=(-Math.random()*15)+'s';h.appendChild(s);}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+function update(v){if(!v)return;var d=Math.floor((Date.now()-new Date(v).getTime())/864e5);if(d<0){document.getElementById('days').textContent='—';return;}document.getElementById('days').textContent=d.toLocaleString();document.getElementById('label').textContent='days of loving you';try{localStorage.setItem('maroua-date',v)}catch(e){}}
+document.getElementById('date').addEventListener('change',function(e){update(e.target.value)});
+try{var sv=localStorage.getItem('maroua-date');if(sv){document.getElementById('date').value=sv;update(sv);}}catch(e){}
+var no=document.getElementById('no'),yes=document.getElementById('yes'),dodges=0;
+function dodge(e){if(e)e.preventDefault();dodges++;
+if(dodges>6){no.style.display='none';document.getElementById('hint').textContent='Only one option left 😄';return;}
+if(no.style.position!=='fixed'){var r=no.getBoundingClientRect();no.style.position='fixed';no.style.left=r.left+'px';no.style.top=r.top+'px';void no.offsetWidth;}
+var w=no.offsetWidth,hh=no.offsetHeight,m=24;
+no.style.left=(m+Math.random()*Math.max(0,window.innerWidth-w-2*m))+'px';
+no.style.top=(m+Math.random()*Math.max(0,window.innerHeight-hh-2*m))+'px';}
+no.addEventListener('mouseover',dodge);no.addEventListener('touchstart',dodge,{passive:false});no.addEventListener('click',dodge);
+yes.addEventListener('click',function(){
+document.getElementById('q').innerHTML='<div class="yay">Yay! ♥</div><p class="letter" style="font-size:1.4rem">I love you, Maroua. Forever. 💖</p>';
+for(var i=0;i<50;i++){var s=document.createElement('span');s.className='burst';s.textContent='♥';s.style.left=Math.random()*100+'%';s.style.fontSize=(16+Math.random()*28)+'px';s.style.animationDuration=(3+Math.random()*4)+'s';s.style.animationDelay=(Math.random()*1.5)+'s';h.appendChild(s);}});
+</script>
+</body>
+</html>
